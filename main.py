@@ -12,7 +12,7 @@ def autoFindPersonByName(ch):
     personName = ''
     personId = 0
     for customer in customers:
-        if ch in customer['name']:
+        if ch.lower() in customer['name'].lower():
             personName = customer['name']
             personId = customer['id']
             person = tk.Button(frame_top, text=str(customer['name']), width=25,
@@ -81,6 +81,10 @@ def writehandler(nameP='', dateP='', serviceP='', priceP=0, discountP=0):
 
         with open("test.json", "w", encoding='utf-8') as fh:
             json.dump(customers, fh)
+        f = open('customers.txt', 'w', encoding='utf-8')
+        for c in customers:
+            f.write(str(c) + '\n')
+        f.close()
         Id.delete(0, 1000)
         name.delete(0, len(nameP))
         date.delete(0, len(dateP))
