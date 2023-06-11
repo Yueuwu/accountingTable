@@ -1,4 +1,4 @@
-# accountingTable
+# Accounting Table
 <h2> Abilities: </h2>
 <ul>
   <li>Save some data abt customers</li>
@@ -10,4 +10,11 @@
 # Some examples
 
 ## Autofill 
-<div align="center"><img width="450" height="350" src=".\imgs\autofill.png"/></div>
+<div align="center"><img height="350" src=".\imgs\autofill.png"/></div>
+
+## Customer info
+<div align="center"><img height="350" src=".\imgs\info.png"/></div>
+
+## Expanded customer info
+
+<div align="center"><img height="350" src=".\imgs\expanded_info.png"/></div>
